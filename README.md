@@ -34,3 +34,14 @@ Server will start on:
 ```
 http://localhost:3000
 ```
+## Example requests (using Postman)
+
+### 1. Run Code API
+
+- Method: `POST`
+- URL: `http://localhost:3000/run`
+- Body (JSON):
+```json
+{
+  "code": "print('hello')"
+}
