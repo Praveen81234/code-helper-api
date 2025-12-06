@@ -41,7 +41,52 @@ http://localhost:3000
 - Method: `POST`
 - URL: `http://localhost:3000/run`
 - Body (JSON):
+
 ```json
 {
   "code": "print('hello')"
 }
+```
+
+---
+
+### 2. Auto-fix API  
+
+- Method: `POST`
+- URL: `http://localhost:3000/auto-fix`
+- Body (JSON):
+
+```json
+{
+  "code": "print('hello'"
+}
+```
+
+**Output Example**
+```json
+{
+  "fixedCode": "print('hello')"
+}
+```
+
+---
+
+### 3. Help API  
+
+- Method: `POST`
+- URL: `http://localhost:3000/help`
+- Body:
+
+```json
+{
+  "query": "syntax"
+}
+```
+
+**Output Example**
+```json
+{
+  "tip": "Tip about missing brackets, commas, semicolons."
+}
+```
+
